@@ -1,0 +1,49 @@
+@include aoa-bg-series($img__classes,$img__aoa,0,"center","cover","scroll");
+
+.bg{
+    &-blue{
+        background-color: $color__blue!important;
+    }
+}
+.border{
+    &-blue{
+        border-color: $color__blue!important;
+    }
+}
+.error{
+    &-s1{
+        background-position-x: 80%!important;
+    }
+}
+.privacy{
+    &-s1{
+        background-position-x: right!important;
+    }
+}
+
+.text{
+    &-blue{
+        color: $color__blue!important;
+    }
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+@media all and (max-width: 575px){
+    .error{
+        &-s1{
+            *{
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+    footer{
+        .text-dark {
+            color: #fff!important;
+            text-shadow: $text__shadow;
+        }
+    }
+}
