@@ -15,12 +15,16 @@
         background-position-x: 80%!important;
     }
 }
+.navbar{
+    &-logo{
+        height: $logo__height;
+    }
+}
 .privacy{
     &-s1{
         background-position-x: right!important;
     }
 }
-
 .text{
     &-blue{
         color: $color__blue!important;
@@ -28,6 +32,12 @@
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+header{
+    z-index: 10;
+}
+textarea{
+    resize: none;
 }
 @media all and (max-width: 575px){
     .error{
@@ -44,6 +54,15 @@
         .text-dark {
             color: #fff!important;
             text-shadow: $text__shadow;
+        }
+    }
+    .navbar{
+        &-nav{
+            backdrop-filter: blur(5px); 
+            background-color: #fff;
+            border: 1px solid #999;
+            opacity: 0.9;
+            padding: 10px;
         }
     }
 }
